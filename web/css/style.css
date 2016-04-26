@@ -1,0 +1,433 @@
+/* CSS Document */
+
+
+body {
+	font-family: Calibri, Arial, "Times New Roman";
+	font-size: 14px;
+	color: #444;
+	margin: 0px;
+	padding: 0px;
+	background: #A4D3D9;
+}
+form{
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+input, select, textarea{
+	font-family: Calibri, Arial, "Times New Roman";
+	font-size: 14px;
+	font-weight: bold;
+	color: #555;
+	padding: 3px;
+    border: solid 1px;
+	border-color: #ccc;
+    border-radius: 3px;
+}
+input:focus, select:focus, textarea:focus {
+    background-color: #555;
+	color: #fff;
+}
+input[type=submit], input[type=reset]{
+	background: #004A9C;
+	color: #fff;
+	cursor:pointer;
+	margin: 20px auto 40px auto;
+	padding: 10px;
+}
+input.OM_input,textarea{
+	width:35%;
+}
+input.OM_input_long{
+	width:40%;
+}
+#om_cp{
+	width:50px;
+}
+label{
+	width: 6%;
+	font-weight: bold;
+	display: inline-block;
+	text-align: right;
+}
+label.label_long{
+	width: 10%;
+}
+label.label_verylong{
+	width: 15%;
+}
+fieldset{
+	margin: 1%;
+	margin-bottom: 20px;
+	padding: 2%;
+	width:  94%;
+}
+legend{
+	font-weight: bold;
+}
+a{
+	color: #004A9C;
+}
+
+
+/* table */
+table.trajets{
+	width:100%;
+	min-width: 800px;
+}
+.firstrow, .firstcol{
+	font-weight: bold;
+}
+td{
+	border-bottom: solid 1px #444;
+	border-right: solid 1px #444;
+	text-align: center;
+}
+tr.firstrow td{
+	border-top: solid 1px #444;
+}
+.firstcol{
+	border-left: solid 1px #444;
+}
+
+.adresse{
+	margin-bottom: 20px;
+	height: 110px;
+}
+.adresse .label_adresse{
+	font-weight: bold;
+	width: 6%;
+	height: 110px;
+	line-height: 110px;
+	float: left;
+	background: url(../images/accolade.png) no-repeat;
+	background-size: contain !important;
+	background-position: right top !important;
+}
+.adresse .fields_adresse{
+	width: 93%;
+	height: 110px;
+	float: left;
+}
+.adresse .OM_field{
+	margin: 0px;
+}
+.adresse input{
+	margin-bottom: 1px;
+}
+.dateshoraires{
+	min-width: 130px;
+}
+.checkCtn{
+	padding: 3px;
+	display: inline-block;
+}
+.passager{
+	display: inline-block;
+}
+.label_transport{
+	text-align: left;
+	font-weight: normal;
+	width: auto;
+}
+
+
+.header{
+	width: 100%;
+	min-height: 150px;
+}
+.logo{
+	width: 100%;
+	min-width: 245px;
+	float: left;
+}
+.logo img{
+	margin: 15px;
+}
+.titre{
+	position: absolute;
+	width: 62%;
+	right: 0;
+	padding-right: 10%;
+	padding-top: 20px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.avertissement{
+	font-weight: normal;
+	font-size: 14px;
+	font-style: italic;
+	color: #555;
+}
+.precision, .precision2{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.precision{
+	margin-top: 30px;
+}
+
+.OM_gen{
+	width: 96%;
+	height: 50px;
+	padding: 1%;
+	text-align: center;
+	margin: 10px auto;
+    border-radius: 5px;
+	background: #fff;
+}
+.OM_gen .OM_gen_col1,.OM_gen .OM_gen_cols{
+	float: left;
+}
+.OM_gen .OM_gen_cols{
+	width: 37%;
+	height: 50px;
+	text-align: left;
+}
+.OM_gen .OM_gen_cols_radio {
+	width: 100%;
+}
+.OM_gen .OM_gen_cols_radio label{
+	width: 70%;
+	text-align: left;
+}
+.OM_gen .OM_gen_col1{
+	width: 18%;
+	min-width: 120px;
+	text-align: right;
+	height: 50px;
+	line-height: 50px;
+	padding-right: 2%;
+}
+
+
+.OM_gen_radio{
+	display: inline-block;
+	margin: auto 20px;
+}
+.OM_field{
+	margin-bottom: 10px;
+}
+
+.oblig,.oblig_exp{
+	width: 100%;
+	text-align: center;
+}
+.oblig{
+	vertical-align: super;
+	font-style: italic;
+	font-size: 9px;
+}
+.oblig_exp{
+	margin-top: 20px;
+}
+.iban{
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.iban input{
+	width: 50px;
+}
+.OM_submit{
+	width: 100%;
+	height : 80px;
+	text-align: center;
+	padding-top: 40px;
+}
+a.OM_submit_bt {
+	background: #004A9C;
+	color: #fff;
+	cursor:pointer;
+	margin: 50px auto;
+	padding: 10px;
+	width: 150px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#OM_hidden_dc,#OM_hidden_ta_1,#OM_hidden_ta_2,#OM_hidden_ta_3,#OM_hidden_ta_4,#OM_hidden_ta_5,#OM_hidden_ta_6,#OM_hidden_ta_annexe,#OM_hidden_ta_annexe2,#OM_hidden_tr_1,#OM_hidden_tr_2,#OM_hidden_tr_3,#OM_hidden_tr_4,#OM_hidden_tr_5,#OM_hidden_tr_6,#OM_hidden_tr_annexe,#OM_hidden_tr_annexe2,#om_formulaire_etranger{
+	width: 80%;
+	display: none;
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 8px;
+}
+#om_formulaire_etranger{
+	width: 96%;
+	height: 30px;
+	line-height: 30px;
+	padding: 1%;
+	text-align: center;
+}
+#OM_hidden_dc label,#OM_hidden_ta_1 label,#OM_hidden_ta_2 label,#OM_hidden_ta_3 label,#OM_hidden_ta_4 label,#OM_hidden_ta_5 label,#OM_hidden_ta_6 label,#OM_hidden_ta_annexe label,#OM_hidden_ta_annexe2 label{
+	width: auto;
+}
+
+.error{
+	color: #fff;
+	background: #f10;
+}
+
+#errors{
+	width: 96%;
+	display: none;
+	color: #fff;
+	background: #f10;
+	font-weight: bold;
+	padding: 1%;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+
+@media screen  and (max-width:1210px){
+	.adresse .label_adresse{
+		width: 10%
+	}
+	.adresse .fields_adresse{
+		width: 89%;
+	}
+}
+@media screen  and (max-width:1120px){
+	.titre{
+		font-size: 24px;
+	}
+	label.label_long,label.label_verylong{
+		width: 100%;
+		text-align: center;
+	}
+}
+@media screen  and (max-width:1020px){
+	.titre{
+		font-size: 22px;
+	}
+	.OM_field label{
+		width: 15%;
+	}
+	.OM_field input{
+		width: 70%;
+	}
+	
+	.iban input{
+		width: 50px;
+	}
+}
+@media screen  and (max-width:920px){
+	.titre{
+		font-size: 20px;
+	}
+	.OM_gen .OM_gen_col1{
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		padding: 0;
+		text-align: center;
+	}
+	.OM_gen .OM_gen_cols{
+		width: 45%;
+		height: 40px;
+		padding: 1%;
+		text-align: center;
+	}
+	.OM_gen {
+		height: 90px;
+	}
+	.OM_field label{
+		width: 20%;
+	}
+	.OM_field input{
+		width: 60%;
+	}
+	.adresse .label_adresse{
+		width: 20%
+	}
+	.adresse .fields_adresse{
+		width: 79%;
+	}
+	.adresse .fields_adresse label{
+		width: 20%;
+	}
+	.adresse .fields_adresse input{
+		width: 75%;
+	}
+	.iban input{
+		width: 50px;
+	}
+}
+@media screen  and (max-width:880px){
+	.titre{
+		font-size: 18px;
+	}
+}
+@media screen  and (max-width:840px){
+	.logo,.titre,.avertissement{
+		position: relative;
+		width: 96%;
+		float: none;
+		text-align: center;
+		display: block;
+		padding: 0%;
+	}
+	#errors{
+		width: 80%;
+	}
+	.titre{
+		padding-top: 5px;
+		font-size: 20px;
+	}
+	.OM_gen{
+		margin: 5px auto;
+	}
+	.OM_gen,#errors{
+		width: 98%;
+    	border-radius: 0px;
+		border: none;
+	}
+	
+}
+@media screen  and (max-width:480px){
+
+	.OM_gen{
+		margin: 5px auto;
+		height: 120px;
+	}
+	
+	.OM_field label{
+		width: 100%;
+		text-align: center;
+	}
+	.OM_field input{
+		width: 90%;
+	}
+	.adresse .label_adresse{
+		width: 100%;
+		background: #444;
+		color: #fff;
+		text-align: center;
+		height: 30px;
+		line-height: 30px;
+		margin-bottom: 3px;
+	}
+	.adresse .fields_adresse{
+		width: 100%;
+		height: 220px;
+	}
+	.adresse .fields_adresse label{
+		width: 100%;
+		text-align: center;
+	}
+	.adresse .fields_adresse input{
+		width: 95%;
+	}
+	.iban input{
+		width: 50px;
+	}
+}
+
+
+

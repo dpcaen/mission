@@ -1,0 +1,65 @@
+                                  ENSICAEN
+
+Application de dématérialisation de la demande des ordres de mission.
+-------------------------------------------------------------------------------
+Pré requis:
+    port 8181 ouvert vers apidemo.yousign.fr (test) et api.yousign.fr (production)
+    serveur TOMCAT
+    Certificats YouSign intégrés à TOMCAT
+    MySQL
+-------------------------------------------------------------------------------
+V 1.1   19 Février 2016
+
+- introduction d'une base de données MySQL pour:
+    - numéroter les ordres de missions
+    - stocker le contenu des ordres de missions
+
+- processus
+    index.jsp:   - identification via CAS puis affichage du formulaire de saisie 
+       |           (tests d'intégrité en javascript)
+       |
+       |
+       ----->  process.jsp:
+                - récupère toutes les informations du formulaire dans l'objet OrdreMission.java
+                - Alimente la base de données (objet GestionBase.java)
+                - génère le fichier PDF (objet GenerePDF.java)
+                - envoie le fichier sur la plate forme YouSign pour signature (objet YousignInitSignature.java)
+
+    web\images\logo.jpg   logo utilisé dans le fichier pdf généré
+    web\images\logo.png   logo utilisé par les pages HTML (index.jsp, process.jsp, erreur.jsp)
+- Déploiement, le dossier "data" n'est plus nécessaire. remplacer par la base de
+données
+                      Racine
+                        |
+                   -----------
+                   |         |   
+                  images     pdf       
+
+
+
+
+V 1.0    1 Février 2016
+
+    Adapter les paramètres dans le fichier YousignConfig.java
+
+    index.jsp:   - identification via CAS puis affichage du formulaire de saisie
+       |
+       |
+       ----->  process.jsp:
+                - récupère toutes les informations du formulaire dans l'objet OrdreMission.java
+                - génère le fichier PDF (objet GenerePDF.java)
+                - envoie le fichier sur la plate forme YouSign pour signature (objet YousignInitSignature.java)
+
+    web\images\logo.jpg   logo utilisé dans le fichier pdf généré
+    web\images\logo.png   logo utilisé par les pages HTML (index.jsp, process.jsp, erreur.jsp)
+
+Déploiement:
+                     Racine
+                        |
+              ----------------------
+              |         |          |
+            images     pdf        data
+
+images: emplacement de logo.jpg utilisé par le générateur PDF
+pdf:    emplacement des PDFs générés (besoin d'un droit d'écriture sur le dossier)
+data:   emplacement des fichiers d'initialisation (liste des reponsables financiers et des véhicules de service)
